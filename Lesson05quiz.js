@@ -21,10 +21,10 @@ const Lesson05quiz = () => {
         <ScrollView>
             <View>
                 <Text>Name:</Text>
-                <Text>----------{PET_DATA.name}</Text>
+                <Text key={PET_DATA.name+1}>----------{PET_DATA.name}</Text>
     
                 <Text>Age:</Text>
-                <Text>----------{PET_DATA.age} years old</Text>
+                <Text key={PET_DATA.age+1}>----------{PET_DATA.age} years old</Text>
     
                 <Image source = {PET_DATA.image} />
                 
@@ -32,13 +32,13 @@ const Lesson05quiz = () => {
                 <Text>---------------</Text>
     
                 <Text>Name:</Text>
-                <Text>----------{OWNER_DATA.name}</Text>
+                <Text key={OWNER_DATA.name+1}>----------{OWNER_DATA.name}</Text>
     
                 <Text>Contact:</Text>
-                <Text>----------{OWNER_DATA.contact}</Text>
+                <Text key={OWNER_DATA.contact+1}>----------{OWNER_DATA.contact}</Text>
     
                 <Text>Membership:</Text>
-                <Text>----------{OWNER_DATA.membership}</Text>
+                <Text key={OWNER_DATA.membership+1}>----------{OWNER_DATA.membership}</Text>
             </View>
         </ScrollView>
     );
